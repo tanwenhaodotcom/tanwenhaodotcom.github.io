@@ -52,7 +52,7 @@
     <meta name="renderer" content="webkit">
 
     <!-- Title -->
-    <title>Tan&#39;s Blog</title>
+    <title>test | Tan&#39;s Blog</title>
 
     <!-- Favicons -->
     <link rel="icon" type="image&#x2F;ico" href="/img/suka-favicon.ico">
@@ -134,6 +134,8 @@
 
     <!-- Prettify Theme -->
     
+    <link rel="preload" href="/css/highlight/github.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/css/highlight/github.min.css"></noscript>
+
 
 
 
@@ -150,12 +152,12 @@
     <meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="Tan's Blog"><meta name="msapplication-starturl" content="http://yoursite.com"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Tan's Blog"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
     <!-- ### The Open Graph & Twitter Card Protocol ### -->
-    <meta property="og:title" content="Tan&#39;s Blog"><meta property="og:site_name" content="Tan&#39;s Blog"><meta property="og:type" content="website"><meta property="og:url" content="http://yoursite.com/"><meta property="og:locale" content="zh-CN"><meta name="description" content="John Doe - Tan&#39;s Blog">
+    <meta property="og:title" content="test | Tan&#39;s Blog"><meta property="og:site_name" content="Tan&#39;s Blog"><meta property="og:type" content="article"><meta property="og:url" content="http://yoursite.com/2020/03/16/test/"><meta property="og:locale" content="zh-CN"><meta name="description" content="John Doe - Tan&#39;s Blog"><meta property="article:published_time" content="2020-03-16T09:42:10.000Z"><meta property="article:modified_time" content="2020-03-16T09:42:10.565Z"><meta property="og:updated_time" content="2020-03-16T09:42:10.565Z"><meta property="article:author" content="John Doe"><meta name="twitter:card" content="summary">
 
     
 
     <!-- ### Canonical link ### -->
-    <link rel="canonical" href="http://yoursite.com/">
+    <link rel="canonical" href="http://yoursite.com/2020/03/16/test/">
 
     <meta name="generator" content="Hexo 4.2.0">
 
@@ -170,10 +172,28 @@
 
     <!-- ### Structured Data ### -->
     
+
+
+
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
-    "@type": "Blog",
+    "url": "http://yoursite.com/2020/03/16/test/",
+    "@type": "BlogPosting",
+    "logo": "http://yoursite.com/img/suka-favicon.ico",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://yoursite.com/2020/03/16/test/"
+    },
+    "headline": "test | Tan&#39;s Blog",
+    
+    "image": {
+        "@type": "ImageObject",
+        "url": "http://yoursite.com/img/suka-favicon.ico"
+    },
+    
+    "datePublished": "2020-03-16T09:42:10.000Z",
+    "dateModified": "2020-03-16T09:42:10.565Z",
     "author": {
         "@type": "Person",
         "name": "John Doe",
@@ -191,16 +211,6 @@
             "url": "http://yoursite.com/img/suka-favicon.ico"
         }
     },
-    "url": "http://yoursite.com",
-    "logo": "http://yoursite.com/img/suka-favicon.ico",
-    "image": {
-        "@type": "ImageObject",
-        "url": "http://yoursite.com/img/suka-favicon.ico"
-    },
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "http://yoursite.com"
-    },
     
     "potentialAction": {
         "@type": "SearchAction",
@@ -212,8 +222,6 @@
     "description": "John Doe - Tan&#39;s Blog"
 }
 </script>
-
-
 
 
 
@@ -284,28 +292,28 @@
         <!-- Share LinkedIn -->
         
         <li class="menu-item">
-            <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://yoursite.com&title=" target="_blank" rel="external noopener noreferrer nofollow">分享到 LinkedIn</a>
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://yoursite.com&title=test" target="_blank" rel="external noopener noreferrer nofollow">分享到 LinkedIn</a>
         </li>
         
 
         <!-- Share QQ -->
         
         <li class="menu-item">
-            <a href="http://connect.qq.com/widget/shareqq/index.html?site=Tan's Blog&title=&summary=&pics=http://yoursite.com/img/suka-favicon.ico&url=http://yoursite.com" target="_blank" rel="external noopener noreferrer nofollow"> 分享到 QQ</a>
+            <a href="http://connect.qq.com/widget/shareqq/index.html?site=Tan's Blog&title=test&summary=&pics=http://yoursite.com/img/suka-favicon.ico&url=http://yoursite.com" target="_blank" rel="external noopener noreferrer nofollow"> 分享到 QQ</a>
         </li>
         
 
         <!-- Share Telegram -->
         
         <li class="menu-item">
-            <a href="https://t.me/share/url?url=http://yoursite.com&text=" target="_blank" rel="external noopener noreferrer nofollow">分享到 Telegram</a>
+            <a href="https://t.me/share/url?url=http://yoursite.com&text=test" target="_blank" rel="external noopener noreferrer nofollow">分享到 Telegram</a>
         </li>
         
 
         <!-- QRCode -->
         
         <li class="menu-item">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHQAAAB0CAAAAABx8Un7AAABLklEQVR42u3ZwbLCMAiF4bz/S+u2dsLJIW2hzvzZePV28i1ECGR8GtYABQXdQodY5///bCCem+0DWotOv/Tjw8Hfx/fWPqCl6Cww1ObqNdoH9B2okwBA/xfNPA/aj0aJOgooldgvVxnQy6j7o3cT/S2nQdBtdNn0LJLEI10b6CVUHcCmwWAW91RGAr0VPScJuyAnPwftRRXsDj+mhR60BY2CIkoIKhjtQAK9FV0lfGfD1XAStB6NDtBu0rCHl6AlqHu4zjZbVsIHfRTNXCBkhpag9ajTCDmFXTVRoLWoO+hwD9VyaAlagu5exDvDaNA+1Amg1ZDZCjLQUtS9tM0UiWXXBtqCqkTuNMmg70StyztR0EF7UCfh71zcgvagzvDCHXbJoTVoCVq5QEFBU+sL0YSSIugE1CwAAAAASUVORK5CYII=" alr="QRCode">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIQAAACECAAAAAB0L9x7AAABlUlEQVR42u3a0WrDMBBE0fz/T7dPgdZoZ8aucUbl+iUBO/IJLNKutK+vgusFAgSILRAvcf28f3z+/f3XoIvnpnFBdCOWQXNAHF8w/X4CLn8LohqxCkg72ZjAdOOC2BMxDmAmMBD/FzEF6WqRU38CxH4IudAEk1ICB7EPwiW6Vz9vzbZBPIZIEpepEEru31KVg3gUMSUvVwsetQDaghhEBSJJYN1GybSxMgUyiG7ENNmoQJ2CTm2WLEEgahGrQEwGSoodGfggKhHJIqaSmWRimpIdEP2ItJB1xc340itJDYjHES7oXIKjYC7AQfQiVCKSFkhqkRuDG0Q14kxwuk13EHsjkiCbih5XBKnnQfQi3AZXssA5qE10QVQh1ESTwNRBjUqUQXQj3GSkDlpcMMaBCaIKkR7EuYInLZxBdCPSRmGXxJxtFgPRjVAbZa45Iz18+VN3EYiPIM42ALpGjlMLGIitEKoQUodvtwYmiDqE24xPXghiP4R82CS6aePX5aQGxOOIpFE4aehJAhtEP+KTFwgQIKoR3+VgaNgVeznEAAAAAElFTkSuQmCC" alr="QRCode">
         </li>
         
 
@@ -316,82 +324,166 @@
 </nav>
 </header>
 
-            <div class="container">
-    <div class="main-container">
-        <main>
-            <div class="post-stream-container">
-                <!-- # Post List # -->
-                
-                    
-                        <article class="post-entry container px-0 card">
-        <div class="columns col-gapless">
             
-                <div class="column col-12">
+    <!-- ## Post ## -->
+    <div class="post-container">
+    <div id="post-card" class="card">
+        
+        <div class="card-item-container">
+            <div class="card-inner-cell">
+                <!-- # Post Header Info # -->
+                <div class="card-header">
                     
-    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2020/03/16/test/" rel="bookmark">test</a></h2>
-
-
-<p class="mb-0 card-body">
-    
-        
-    <a href="/2020/03/16/test/">阅读全文</a>
-</p>
+    <h1 class="card-title h3 mb-2">test</h1>
 
 
 
 
-    <!-- Date & Category -->
-    <div class="card-footer post-entry-info text-gray">
+<div class="post-header-info">
+    <p class="post-header-info-left text-gray">
         <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="John Doe's Avatar">
-        <time>2020-03-16</time>
+        <span>2020-03-16</span>
         
+        
+            <!-- Busuanzi Post Views -->
+<span id="busuanzi_container_page_pv" hidden>
+    <span class="suka-devide-dot"></span>
+    <span></span>
+    <span id="busuanzi_value_page_pv"></span>
+    <span>Views</span>
+</span>
+        
+        
+    </p>
+    <div class="post-header-info-right">
+        
+            <div class="dropdown dropdown-right">
+<a class="dropdown-toggle" tabindex="0">分享本文</a>
+<ul class="menu share-menu">
+    <!-- Share Weibo -->
+    
+    <li class="menu-item">
+        <a href="http://service.weibo.com/share/share.php?appkey=&title=test&url=http://yoursite.com/2020/03/16/test/&pic=http://yoursite.com/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">分享到微博</a>
+    </li>
+    
+
+    <!-- Share Twitter -->
+    
+    <li class="menu-item">
+        <a href="https://twitter.com/intent/tweet?text=test&url=http://yoursite.com/2020/03/16/test/&via=John Doe" target="_blank" rel="external noopener noreferrer nofollow">分享到 Twitter</a>
+    </li>
+    
+
+    <!-- Share Facebook -->
+    
+    <li class="menu-item">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2020/03/16/test/" target="_blank" rel="external noopener noreferrer nofollow">分享到 Facebook</a>
+    </li>
+    
+
+    <!-- Share Google+ -->
+    
+    <li class="menu-item">
+        <a href="https://plus.google.com/share?url=http://yoursite.com/2020/03/16/test/" target="_blank" rel="external noopener noreferrer nofollow">分享到 Google+</a>
+    </li>
+    
+
+    <!-- Share LinkedIn -->
+    
+    <li class="menu-item">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://yoursite.com/2020/03/16/test/&title=Tan's Blog" target="_blank" rel="external noopener noreferrer nofollow">分享到 LinkedIn</a>
+    </li>
+    
+
+    <!-- Share QQ -->
+    
+    <li class="menu-item">
+        <a href="http://connect.qq.com/widget/shareqq/index.html?site=Tan's Blog&title=Tan's Blog&summary=&pics=http://yoursite.com/img/suka-favicon.ico&url=http://yoursite.com/2020/03/16/test/" target="_blank" rel="external noopener noreferrer nofollow"> 分享到 QQ</a>
+    </li>
+    
+
+    <!-- Share Telegram -->
+    
+    <li class="menu-item">
+        <a href="https://t.me/share/url?url=http://yoursite.com/2020/03/16/test/&text=Tan's Blog" target="_blank" rel="external noopener noreferrer nofollow">分享到 Telegram</a>
+    </li>
+    
+
+    <!-- QRCode -->
+    
+    <li class="menu-item">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIQAAACECAAAAAB0L9x7AAABlUlEQVR42u3a0WrDMBBE0fz/T7dPgdZoZ8aucUbl+iUBO/IJLNKutK+vgusFAgSILRAvcf28f3z+/f3XoIvnpnFBdCOWQXNAHF8w/X4CLn8LohqxCkg72ZjAdOOC2BMxDmAmMBD/FzEF6WqRU38CxH4IudAEk1ICB7EPwiW6Vz9vzbZBPIZIEpepEEru31KVg3gUMSUvVwsetQDaghhEBSJJYN1GybSxMgUyiG7ENNmoQJ2CTm2WLEEgahGrQEwGSoodGfggKhHJIqaSmWRimpIdEP2ItJB1xc340itJDYjHES7oXIKjYC7AQfQiVCKSFkhqkRuDG0Q14kxwuk13EHsjkiCbih5XBKnnQfQi3AZXssA5qE10QVQh1ESTwNRBjUqUQXQj3GSkDlpcMMaBCaIKkR7EuYInLZxBdCPSRmGXxJxtFgPRjVAbZa45Iz18+VN3EYiPIM42ALpGjlMLGIitEKoQUodvtwYmiDqE24xPXghiP4R82CS6aePX5aQGxOOIpFE4aehJAhtEP+KTFwgQIKoR3+VgaNgVeznEAAAAAElFTkSuQmCC" alt="QRCode">
+    </li>
+    
+
+</ul>
+</div>
         
     </div>
-
+</div>
                 </div>
-            
-        </div>
-</article>
-
+                <div class="card-body">
                     
-                
+                        
+                        
                     
-                        <article class="post-entry container px-0 card">
-        <div class="columns col-gapless">
-            
-                <div class="column col-12">
+                    <article id="post-content">
+                        
+                    </article>
                     
-    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2020/03/16/hello-world/" rel="bookmark">Hello World</a></h2>
 
 
-<p class="mb-0 card-body">
-    
-        Welcome to Hexo! This is your very first post. Check...
-    <a href="/2020/03/16/hello-world/">阅读全文</a>
+    <blockquote id="date-expire-notification" class="post-expired-notify">本文最后更新于 <span id="date-expire-num"></span> 天前，文中所描述的信息可能已发生改变</blockquote>
+    <script>
+    (function() {
+        var dateUpdate = Date.parse("2020-03-16");
+        var nowDate = new Date();
+        var a = nowDate.getTime();
+        var b = a - dateUpdate;
+        var daysUpdateExpire = Math.floor(b/(24*3600*1000));
+        if (daysUpdateExpire >= 120) {
+            document.getElementById('date-expire-num').innerHTML = daysUpdateExpire;
+        } else {
+            document.getElementById('date-expire-notification').style.display = 'none';
+        }
+    })();
+    </script>
+
+
+<p class="post-footer-info mb-0 pt-0">本文发表于&nbsp;<time datetime="2020-03-16T09:42:10.000Z" itemprop="datePublished">2020-03-16</time>
+
+</p>
+<p class="post-footer-info mb-0 pt-2">
+
+
+
+
 </p>
 
-
-
-
-    <!-- Date & Category -->
-    <div class="card-footer post-entry-info text-gray">
-        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="John Doe's Avatar">
-        <time>2020-03-16</time>
-        
-        
-    </div>
-
                 </div>
-            
-        </div>
-</article>
+                <div class="post-nav px-2 bg-gray">
+<ul class="pagination">
+    <!-- Prev Nav -->
+    
 
+    <!-- Next Nav -->
+    
+        <li class="page-item page-next">
+            <a href="/2020/03/16/hello-world/" rel="next">
+                <div class="page-item-title"><i class="icon icon-forward" aria-hidden="true"></i></div>
+                <div class="page-item-subtitle">Hello World</div>
+            </a>
+        </li>
+    
+</ul>
+</div>
+
+                
+                    <!-- # Comment # -->
                     
                 
             </div>
-        </main>
-        
-
+        </div>
     </div>
 </div>
 
