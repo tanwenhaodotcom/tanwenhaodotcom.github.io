@@ -21,6 +21,9 @@
 <!-- comment -->
 
 
+    <link rel="dns-prefetch" href="//disqus.com">
+    <link rel="dns-prefetch" href="//tanwenhao-com.disqus.com">
+
 
 
 
@@ -298,40 +301,6 @@
     </p>
     <div class="post-header-info-right">
         
-            <div class="dropdown dropdown-right">
-<a class="dropdown-toggle" tabindex="0">分享本文</a>
-<ul class="menu share-menu">
-    <!-- Share Weibo -->
-    
-
-    <!-- Share Twitter -->
-    
-
-    <!-- Share Facebook -->
-    
-
-    <!-- Share Google+ -->
-    
-
-    <!-- Share LinkedIn -->
-    
-
-    <!-- Share QQ -->
-    
-
-    <!-- Share Telegram -->
-    
-
-    <!-- QRCode -->
-    
-    <li class="menu-item">
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKQAAACkCAAAAAA83tqdAAACP0lEQVR42u2cwXLCMAxE8/8/Ta+d1NpdOXRKrecLEDB5nrGS1Upwvf7BuIAEEkggPwDyEuP7+6vnq/n3Y6vXyXmBnA253LQLmOoz1Zw7kPu++3EgZ0OuNvuPSYvnKhhWx9PzAgmk/LAZqyBJFwckkLuB4y7qSqC4RyCB7AgMJzqSk7ubwGMVBORxkE83/u7jW7NFII+BjIwjISJU8lUJjl9x1YA8BrJrIlUmlhK5lenlFgPkXEiX1FdiohK/3QWXAQrkWMgkKVMXY7WwRCSXQQfkeMhqUlKESsz96hytOw6Qx0O64tKuuHXmvjNZgZwLqTZ4J9nviGhXHAVyNqQSDU4AO5HbnWejG8gxkKlY6JgCHSMgMlGBHAfZLcA74aGSLbcAIIF0jXAqiUqaQdNkT1YfgBwDmTRmumJ7ImiT74i6WYA8HrKzoZ2RqkzSLaMAyJGQT4qcLgA6wsVezIEcAylFZ9gM1y2gJoYYkEA6w75TGO0E41b1AcjjIRMjyRXinzbltcwBII+GTAz4VGB0iqSqAQpIIFMT1DUhOUM2FR1AApkk71Fjh0usruzHcEACmRSJ0oS+KzpkAQDI8ZBJ40dH9CbNJDKYgBwJ2W1iSoRDYjpEhXsgR0K6pCstICkB7BqiStMWyLGQSiAocyABTpqYgATy9aY/2uoU6VPhDCSQCaQzU7sNIY+dXiBHQ7rGJmdQpQEGJJCpwEgaO1zDkrspbJmoQB4NmSZiTgwnAsUW4oEcD/nJA0gggQTyD8cX6Bn3Rls6eDUAAAAASUVORK5CYII=" alt="QRCode">
-    </li>
-    
-
-</ul>
-</div>
-        
     </div>
 </div>
                 </div>
@@ -388,22 +357,6 @@
                     
 
 
-    <blockquote id="date-expire-notification" class="post-expired-notify">本文最后更新于 <span id="date-expire-num"></span> 天前，文中所描述的信息可能已发生改变</blockquote>
-    <script>
-    (function() {
-        var dateUpdate = Date.parse("2020-03-17");
-        var nowDate = new Date();
-        var a = nowDate.getTime();
-        var b = a - dateUpdate;
-        var daysUpdateExpire = Math.floor(b/(24*3600*1000));
-        if (daysUpdateExpire >= 120) {
-            document.getElementById('date-expire-num').innerHTML = daysUpdateExpire;
-        } else {
-            document.getElementById('date-expire-notification').style.display = 'none';
-        }
-    })();
-    </script>
-
 
 <p class="post-footer-info mb-0 pt-0">本文发表于&nbsp;<time datetime="2020-03-17T10:11:25.000Z" itemprop="datePublished">2020-03-17</time>
 
@@ -441,6 +394,26 @@
 
                 
                     <!-- # Comment # -->
+                    
+                        <div class="card-footer post-comment">
+                            <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+        this.page.url = 'https://tanwenhao.com/2020/03/17/%E8%AE%BA%E8%A8%80%E8%AE%BA%E8%87%AA%E7%94%B1/'; // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'https://tanwenhao.com/2020/03/17/%E8%AE%BA%E8%A8%80%E8%AE%BA%E8%87%AA%E7%94%B1/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+<script id="disqus-thread-script">
+    (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document;
+        var s = d.createElement('script');
+        s.src = '//tanwenhao-com.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', + new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+                        </div>
                     
                 
             </div>
@@ -499,6 +472,11 @@ console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c 
 
 
 <!-- Comment -->
+
+    
+        <script id="dsq-count-scr" src="https://tanwenhao-com.disqus.com/count.js" async></script>
+
+    
 
 
 <!-- ### Custom Footer ### -->
