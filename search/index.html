@@ -55,7 +55,7 @@
     <meta name="renderer" content="webkit">
 
     <!-- Title -->
-    <title>1 | Notebook</title>
+    <title>搜索 | Notebook</title>
 
     <!-- Favicons -->
     <link rel="icon" type="image&#x2F;ico" href="/img/suka-favicon.ico">
@@ -153,12 +153,12 @@
     <meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="Notebook"><meta name="msapplication-starturl" content="https://tanwenhao.com"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Notebook"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
     <!-- ### The Open Graph & Twitter Card Protocol ### -->
-    <meta property="og:title" content="1 | Notebook"><meta property="og:site_name" content="Notebook"><meta property="og:type" content="website"><meta property="og:url" content="https://tanwenhao.com/1.html"><meta property="og:locale" content="zh-CN"><meta name="description" content="John Doe - Notebook"><meta property="article:published_time" content="2021-05-03T07:25:11.768Z"><meta property="article:modified_time" content="2021-05-03T07:25:04.950Z"><meta property="og:updated_time" content="2021-05-03T07:25:04.950Z">
+    <meta property="og:title" content="搜索 | Notebook"><meta property="og:site_name" content="Notebook"><meta property="og:type" content="website"><meta property="og:url" content="https://tanwenhao.com/search/"><meta property="og:locale" content="zh-CN"><meta name="description" content="John Doe - Notebook"><meta property="article:published_time" content="2021-05-03T07:26:12.112Z"><meta property="article:modified_time" content="2021-05-03T07:26:12.112Z"><meta property="og:updated_time" content="2021-05-03T07:26:12.112Z">
 
     
 
     <!-- ### Canonical link ### -->
-    <link rel="canonical" href="https://tanwenhao.com/1.html">
+    <link rel="canonical" href="https://tanwenhao.com/search/">
 
     <meta name="generator" content="Hexo 4.2.0">
 
@@ -218,102 +218,51 @@
 </header>
 
             
-    <!-- ## Post ## -->
-    <div class="post-container">
-    <div id="post-card" class="card">
+    <!-- ## Local Search Page ## -->
+    <div class="container search-container">
+    <div class="main-container">
+        <!-- # Title # -->
+        <h2 class="page-title">搜索</h2>
+
         
-        <div class="card-item-container">
-            <div class="card-inner-cell">
-                <!-- # Post Header Info # -->
-                <div class="card-header">
-                    
-    <h1 class="card-title h3 mb-2">1</h1>
+
+        
+            <!-- # Input # -->
+<div id="search-input">
+    <form class="input-group" autocomplete="off">
+        <input maxlength="80" type="search" id="search-field" name="s" class="form-input input-lg" placeholder="请输入关键字...." required>
+        <button class="btn btn-primary input-group-btn btn-lg" type="submit">搜索</button>
+    </form>
+</div>
+<!-- # Description & Output # -->
+<div id="search-result-info" hidden>总共找到 <span id="search-result-num"></span> 条结果</div>
+<div id="search-output"></div>
+        
+
+        
 
 
-
-
-<div class="post-header-info">
-    <p class="post-header-info-left text-gray">
-        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="John Doe's Avatar">
-        <span>2021-05-03</span>
-        
-        
-            <!-- Busuanzi Post Views -->
-<span id="busuanzi_container_page_pv" hidden>
-    <span class="suka-devide-dot"></span>
-    <span></span>
-    <span id="busuanzi_value_page_pv"></span>
-    <span>Views</span>
-</span>
-        
-        
-    </p>
-    <div class="post-header-info-right">
-        
     </div>
 </div>
-                </div>
-                <div class="card-body">
-                    
-                        
-                        
-                    
-                    <article id="post-content">
-                        
-                    </article>
-                    
 
 
+    <!-- import load local-search -->
 
-<p class="post-footer-info mb-0 pt-0">本文发表于&nbsp;<time datetime="2021-05-03T07:25:11.768Z" itemprop="datePublished">2021-05-03</time>
-
-</p>
-<p class="post-footer-info mb-0 pt-2">
+    <script src="/js/local-search.min.js"></script>
 
 
-
-
-</p>
-
-                </div>
-                <div class="post-nav px-2 bg-gray">
-<ul class="pagination">
-    <!-- Prev Nav -->
-    
-
-    <!-- Next Nav -->
-    
-</ul>
-</div>
-
-                
-                    <!-- # Comment # -->
-                    
-                        <div class="card-footer post-comment">
-                            <div id="disqus_thread"></div>
 <script>
-    var disqus_config = function () {
-        this.page.url = 'https://tanwenhao.com/1.html'; // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = 'https://tanwenhao.com/1.html'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-</script>
-<script id="disqus-thread-script">
-    (function() { // DON'T EDIT BELOW THIS LINE
-        var d = document;
-        var s = d.createElement('script');
-        s.src = '//tanwenhao-com.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', + new Date());
-        (d.head || d.body).appendChild(s);
+    (function () {
+        var searchNoResult = '';
+        searchNoResult += '<div class="search-noresult"><span>没有找到任何结果，请更换关键字试试~'
+        window.searchFunc('/search.xml', searchNoResult);
     })();
 </script>
 
-                        </div>
-                    
-                
-            </div>
-        </div>
-    </div>
-</div>
+
+
+
+
 
             <!-- ### Footer ### -->
             <footer class="text-center">
