@@ -260,40 +260,6 @@
             
                 <div class="column col-12">
                     
-    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2026/11/09/%E6%B5%8B%E8%AF%952/" rel="bookmark">测试2</a></h2>
-
-
-<p class="mb-0 card-body">
-    
-        123
-
-    <a href="/2026/11/09/%E6%B5%8B%E8%AF%952/">阅读全文</a>
-</p>
-
-
-
-
-    <!-- Date & Category -->
-    <div class="card-footer post-entry-info text-gray">
-        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Wenhao Tan's Avatar">
-        <time>2026-11-09</time>
-        
-        
-    </div>
-
-                </div>
-            
-        </div>
-</article>
-
-                    
-                
-                    
-                        <article class="post-entry container px-0 card">
-        <div class="columns col-gapless">
-            
-                <div class="column col-12">
-                    
     <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2021/11/03/%E4%B8%AD%E5%9B%BD%E8%BF%91%E4%BB%A3%E5%8F%B2%E7%AE%80%E8%BF%B0%EF%BC%881921-1978%EF%BC%89/" rel="bookmark">中国近代史简述（1921-1978）</a></h2>
 
 
@@ -463,7 +429,17 @@ window.lazyLoadOptions = {
     elements_selector: ".lazyload",
     threshold: 50
 };
-document.getElementById('copyright-year').textContent = new Date().getFullYear();
+
+(function() {
+    var copyrightNow = new Date().getFullYear();
+    var copyrightContent = document.getElementById('copyright-year');
+    var copyrightSince = 2020;
+    if (copyrightSince === copyrightNow) {
+        copyrightContent.textContent = copyrightNow;
+    } else {
+        copyrightContent.textContent = copyrightSince + ' - ' + copyrightNow;
+    }
+})();
 console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c https://github.com/SukkaW/hexo-theme-suka \n', 'color: #fff; background: #444; padding:5px 0;', 'background: #bbb; padding:5px 0;');
 
 </script>
