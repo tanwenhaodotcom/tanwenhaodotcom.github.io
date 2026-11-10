@@ -1,0 +1,115 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><title>Milo：从寻找主题，到和 AI 一起做出自己的 Hexo 主题 | Wenhao Tan</title><meta name="description" content="最近，我做了一件以前不太会想到自己能完成的事情：开发并发布了一个 Hexo 博客主题。 它叫 Milo。 项目地址：GitHub · hexo-theme-milo 不过，首先需要说明的是，我并不是一名程序员，也没有系统学习过前端开发。Milo 的绝大部分代码并不是我亲手写出来的，而是在 ChatGPT 和 OpenA"><link rel="canonical" href="https://tanwenhao.com/2026/11/10/Milo%EF%BC%9A%E4%BB%8E%E5%AF%BB%E6%89%BE%E4%B8%BB%E9%A2%98%EF%BC%8C%E5%88%B0%E5%92%8C-AI-%E4%B8%80%E8%B5%B7%E5%81%9A%E5%87%BA%E8%87%AA%E5%B7%B1%E7%9A%84-Hexo-%E4%B8%BB%E9%A2%98/"><meta property="og:title" content="Milo：从寻找主题，到和 AI 一起做出自己的 Hexo 主题 | Wenhao Tan"><meta property="og:type" content="article"><meta property="og:url" content="https://tanwenhao.com/2026/11/10/Milo%EF%BC%9A%E4%BB%8E%E5%AF%BB%E6%89%BE%E4%B8%BB%E9%A2%98%EF%BC%8C%E5%88%B0%E5%92%8C-AI-%E4%B8%80%E8%B5%B7%E5%81%9A%E5%87%BA%E8%87%AA%E5%B7%B1%E7%9A%84-Hexo-%E4%B8%BB%E9%A2%98/"><meta property="og:description" content="最近，我做了一件以前不太会想到自己能完成的事情：开发并发布了一个 Hexo 博客主题。 它叫 Milo。 项目地址：GitHub · hexo-theme-milo 不过，首先需要说明的是，我并不是一名程序员，也没有系统学习过前端开发。Milo 的绝大部分代码并不是我亲手写出来的，而是在 ChatGPT 和 OpenA"><meta property="og:image" content="https://tanwenhao.com/img/milo-homepage.png"><meta property="og:site_name" content="Wenhao Tan">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Milo：从寻找主题，到和 AI 一起做出自己的 Hexo 主题 | Wenhao Tan"><meta name="twitter:description" content="最近，我做了一件以前不太会想到自己能完成的事情：开发并发布了一个 Hexo 博客主题。 它叫 Milo。 项目地址：GitHub · hexo-theme-milo 不过，首先需要说明的是，我并不是一名程序员，也没有系统学习过前端开发。Milo 的绝大部分代码并不是我亲手写出来的，而是在 ChatGPT 和 OpenA"><meta name="twitter:image" content="https://tanwenhao.com/img/milo-homepage.png">
+<link rel="alternate" type="application/atom+xml" title="Wenhao Tan" href="https://tanwenhao.com/atom.xml">
+<link rel="icon" href="/favicon.svg"><script src="/js/milo.js" defer></script><script>try{var mode=localStorage.getItem('milo-appearance')||localStorage.getItem('blog-appearance')||'system';document.documentElement.dataset.mode=mode==='system'?(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'):mode}catch(e){}</script><link rel="stylesheet" href="/css/milo.css"><meta name="generator" content="Hexo 8.1.2"></head><body><a class="skip" href="#main">跳到正文</a><header class="topbar"><nav class="nav" aria-label="主导航"><a class="brand" href="/">Wenhao Tan</a><div class="navlinks"><a href="/" >首页</a><a href="/archives/" >归档</a><a href="/categories/" >分类</a><a href="/tags/" >标签</a><a href="/about/" >关于</a></div><div class="tools"><button class="icon-button mobile-search" aria-label="展开搜索" aria-expanded="false" aria-controls="nav-search"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg></button><form id="nav-search" class="nav-search" action="/search/" role="search"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg><label class="sr" for="nav-q">搜索文章</label><input id="nav-q" name="q" type="search" placeholder="搜索文章" required></form><div class="appearance"><button class="icon-button appearance-button" aria-label="外观" aria-expanded="false" aria-controls="appearance-menu"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 4a8 8 0 0 0 0 16Z" fill="currentColor"/></svg></button><div id="appearance-menu" class="appearance-menu" hidden role="group" aria-label="选择外观"><button type="button" data-mode="system" aria-pressed="false">跟随系统</button><button type="button" data-mode="dark" aria-pressed="false">深色模式</button><button type="button" data-mode="light" aria-pressed="false">浅色模式</button></div></div></div></nav></header><script src="/js/reading.js" defer></script><div class="reading with-toc"><main id="main"><header class="reading-heading"><a class="back" href="/">返回首页</a><h1>Milo：从寻找主题，到和 AI 一起做出自己的 Hexo 主题</h1><div class="meta"><span>Wenhao Tan</span><span>·</span><time datetime="2026-11-10T03:18:00.000Z">2026-11-10</time><span>·</span><a href="/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/">技术笔记</a><span>·</span><span>约 8 分钟阅读</span></div></header><details class="mobile-toc"><summary>本文目录</summary><nav aria-label="移动端文章目录"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E5%88%87%E4%BB%8E%E6%89%BE%E4%B8%8D%E5%88%B0%E5%90%88%E9%80%82%E7%9A%84%E4%B8%BB%E9%A2%98%E5%BC%80%E5%A7%8B"><span class="toc-text">一切从找不到合适的主题开始</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%88%91%E4%B8%8D%E4%BC%9A%E5%86%99%E5%A4%9A%E5%B0%91%E4%BB%A3%E7%A0%81%EF%BC%8C%E9%82%A3%E8%A6%81%E6%80%8E%E4%B9%88%E5%81%9A%EF%BC%9F"><span class="toc-text">我不会写多少代码，那要怎么做？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Milo-%E6%83%B3%E6%88%90%E4%B8%BA%E4%BB%80%E4%B9%88%E6%A0%B7%E7%9A%84%E4%B8%BB%E9%A2%98%EF%BC%9F"><span class="toc-text">Milo 想成为什么样的主题？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%8E%E8%83%BD%E6%98%BE%E7%A4%BA%E7%BD%91%E9%A1%B5%EF%BC%8C%E5%88%B0%E7%9C%9F%E6%AD%A3%E8%83%BD%E5%A4%9F%E4%BD%BF%E7%94%A8"><span class="toc-text">从能显示网页，到真正能够使用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A6%96%E9%A1%B5%E4%B8%8E%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80"><span class="toc-text">首页与响应式布局</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E7%AB%A0%E9%98%85%E8%AF%BB%E4%BD%93%E9%AA%8C"><span class="toc-text">文章阅读体验</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%90%9C%E7%B4%A2%E3%80%81%E5%BD%92%E6%A1%A3%E5%92%8C%E5%85%B6%E4%BB%96%E7%BB%86%E8%8A%82"><span class="toc-text">搜索、归档和其他细节</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#AI-%E5%86%99%E4%BB%A3%E7%A0%81%EF%BC%8C%E5%B9%B6%E4%B8%8D%E6%84%8F%E5%91%B3%E7%9D%80%E4%B8%8D%E9%9C%80%E8%A6%81%E5%88%A4%E6%96%AD"><span class="toc-text">AI 写代码，并不意味着不需要判断</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%8E-v0-2-0-%E5%88%B0-v0-3-0"><span class="toc-text">从 v0.2.0 到 v0.3.0</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#AI-%E6%97%B6%E4%BB%A3%EF%BC%8C%E4%B8%80%E4%B8%AA%E6%99%AE%E9%80%9A%E4%BA%BA%E8%83%BD%E5%81%9A%E4%BA%9B%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-text">AI 时代，一个普通人能做些什么？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%80%E5%90%8E"><span class="toc-text">最后</span></a></li></ol></nav></details><div class="reading-progress" hidden><label class="sr" for="reading-progress">正文阅读进度</label><progress id="reading-progress" max="100" value="0"></progress><span aria-hidden="true">0%</span></div><article class="prose" id="post-content" data-lightbox="false"><p>最近，我做了一件以前不太会想到自己能完成的事情：开发并发布了一个 Hexo 博客主题。</p>
+<p>它叫 <strong>Milo</strong>。</p>
+<p>项目地址：<a target="_blank" rel="noopener" href="https://github.com/tanwenhaodotcom/hexo-theme-milo">GitHub · hexo-theme-milo</a></p>
+<p>不过，首先需要说明的是，我并不是一名程序员，也没有系统学习过前端开发。Milo 的绝大部分代码并不是我亲手写出来的，而是在 ChatGPT 和 OpenAI Codex 的协助下完成的。</p>
+<p>我负责提出需求、确定方向、体验和判断效果，AI 则承担了主要的代码编写、调试和测试工作。</p>
+<p>所以，与其说这是一个我独立编写的主题，不如说它是一次由我主导、借助 AI 完成的个人开源项目。</p>
+<h2 id="一切从找不到合适的主题开始"><a href="#一切从找不到合适的主题开始" class="headerlink" title="一切从找不到合适的主题开始"></a>一切从找不到合适的主题开始</h2><p>最初，我并没有开发主题的打算。</p>
+<p>我只是想搭建一个属于自己的个人网站，用来记录一些想法、整理文章，最好能够长期使用，不需要经常维护。</p>
+<p>Hexo 很适合这个目标。它可以把 Markdown 文章生成静态网页，不需要专门维护一个后端服务，部署到 GitHub Pages 也比较方便。</p>
+<p>真正让我纠结的，是主题。</p>
+<p>我一直很喜欢一些个人博客的设计。它们没有复杂的视觉装饰，却能通过恰当的字体、留白、内容层级和细节处理，让整个页面看起来干净、协调，读起来也很舒服。</p>
+<p>我希望自己的网站也能有这样的感觉。</p>
+<p>为了找到合适的主题，我尝试过不同的选择。有些主题设计不错，但功能或布局不完全符合我的习惯；有些主题功能丰富，却显得过于复杂；还有一些主题由于长期没有维护，在新的软件环境中会遇到兼容性问题。</p>
+<p>渐渐地，我发现自己很难找到一个各方面都满意的方案。</p>
+<p>而且，随着使用时间变长，我对网站的想法也越来越具体。</p>
+<p>既然始终找不到特别满意的，为什么不尝试自己做一个？</p>
+<p>于是，Milo 就这样开始了。</p>
+<h2 id="我不会写多少代码，那要怎么做？"><a href="#我不会写多少代码，那要怎么做？" class="headerlink" title="我不会写多少代码，那要怎么做？"></a>我不会写多少代码，那要怎么做？</h2><p>如果是在几年前，我大概不会认真考虑这个问题。</p>
+<p>开发一个主题意味着需要理解 HTML、CSS、JavaScript、Hexo 模板，以及构建、测试和部署等一系列流程。对一个没有系统编程基础的人来说，这些东西并不简单。</p>
+<p>但现在有了 AI，情况开始发生变化。</p>
+<p>在 Milo 的开发过程中，我主要使用两个工具：</p>
+<ul>
+<li><strong>ChatGPT</strong>：帮助我理解技术问题、比较实现方案、梳理需求，以及判断应该如何推进开发。</li>
+<li><strong>OpenAI Codex</strong>：直接操作项目代码，完成具体实现、调试、测试和 Git 相关工作。</li>
+</ul>
+<p>我的主要工作则是决定 Milo 应该是什么样子。</p>
+<p>例如，首页到底应该怎样排列文章？侧边栏是否需要固定？手机上图片应该放在标题旁边，还是标题下方？阅读进度条放在顶部还是底部？一个功能带来的收益是否值得增加额外的复杂度？</p>
+<p>这些问题没有一个简单的“正确答案”。</p>
+<p>AI 可以给出方案，也可以快速实现，但最终是否符合我的使用习惯，还是需要我自己判断。</p>
+<p>很多时候，Codex 会把某个功能实现出来，测试也全部通过，但我实际打开网页后，仍然会觉得哪里不太协调。</p>
+<p>这时就只能继续调整。</p>
+<p>所以，Milo 的开发并不是我向 AI 描述一次需求，它就自动生成了一个完美的主题。它经历了很多次讨论、修改、验收，甚至推翻此前方案的过程。</p>
+<h2 id="Milo-想成为什么样的主题？"><a href="#Milo-想成为什么样的主题？" class="headerlink" title="Milo 想成为什么样的主题？"></a>Milo 想成为什么样的主题？</h2><p>从一开始，我就不希望 Milo 成为一个功能越多越好的项目。</p>
+<p>我给它确定了三个关键词：</p>
+<p><strong>轻量、独立、长期可维护。</strong></p>
+<p>轻量，是希望页面能够快速加载，尽量避免不必要的资源和依赖。</p>
+<p>独立，是希望它拥有自己的设计与实现，而不是简单修改其他主题的颜色和布局。</p>
+<p>长期可维护，则意味着代码不应为了短期效果而变得越来越复杂。即使未来需要调整，也应该能够比较容易地理解和修改。</p>
+<p>在技术实现上，Milo 使用 EJS 模板、原生 CSS 和 JavaScript，没有采用大型前端框架。</p>
+<p>这部分架构和具体代码主要由 Codex 实现，但技术路线是在开发过程中不断讨论和比较后确定的。</p>
+<p>我并不认为技术越复杂，项目就越优秀。</p>
+<p>对于一个个人博客主题来说，稳定地展示文章、提供良好的阅读体验，可能比拥有大量炫目的功能更加重要。</p>
+<h2 id="从能显示网页，到真正能够使用"><a href="#从能显示网页，到真正能够使用" class="headerlink" title="从能显示网页，到真正能够使用"></a>从能显示网页，到真正能够使用</h2><p>Milo 最初并没有现在这么完整。</p>
+<p>一开始，主要是解决基本的页面结构、导航、文章列表和链接问题。</p>
+<p>随后才逐渐加入更多功能。</p>
+<h3 id="首页与响应式布局"><a href="#首页与响应式布局" class="headerlink" title="首页与响应式布局"></a>首页与响应式布局</h3><p>桌面端采用双栏结构，左边展示文章，右边放置作者信息、最近文章和分类。</p>
+<p>手机端则重新组织内容，避免把桌面布局直接压缩到狭窄的屏幕里。</p>
+<p><img src="/img/milo-homepage.png"
+     alt="Milo 首页截图"
+     class="milo-screenshot" loading="lazy" decoding="async" width="2048" height="1082"></p>
+<p>首页封面就是一个很典型的例子。</p>
+<p>最初，我觉得右侧图片和左侧文字在高度上不太协调，于是尝试了垂直居中。</p>
+<p>但到了手机上，继续使用左右排列又出现了新的问题：图片占据标题宽度，摘要被挤得很窄。</p>
+<p>最后决定让手机端改为标题、图片、摘要依次排列，而桌面端继续保留左右布局。</p>
+<p>这不是多么复杂的功能，却经历了好几轮调整。</p>
+<h3 id="文章阅读体验"><a href="#文章阅读体验" class="headerlink" title="文章阅读体验"></a>文章阅读体验</h3><p>文章页是我比较重视的部分。</p>
+<p>Milo 逐渐加入了文章目录、章节定位、阅读进度、代码复制、图片懒加载以及可选的图片灯箱。</p>
+<p>其中，阅读进度条的位置也改过。</p>
+<p>最初手机端使用底部进度条，到了 v0.3.0，我决定尝试把它放在顶部导航栏下方。</p>
+<p>目前我还不能确定这是不是最好的方案。</p>
+<p>但我觉得，个人项目有一个优势：可以先做出选择，实际使用一段时间，再决定是否保留。</p>
+<p>如果未来发现顶部方案并不理想，也完全可以调整回来。</p>
+<h3 id="搜索、归档和其他细节"><a href="#搜索、归档和其他细节" class="headerlink" title="搜索、归档和其他细节"></a>搜索、归档和其他细节</h3><p>随着主题逐渐完善，Codex 还实现了文章搜索、关键词高亮、归档、分类、标签、SEO 元信息、Atom 订阅以及自定义 404 页面等功能。</p>
+<p>这些东西未必能在第一眼看到，却影响着主题实际使用时是否方便。</p>
+<p>例如，搜索结果中的长英文字符串可能撑破布局；文章标题太长时可能影响首页排版；图片加载后可能导致页面跳动；目录跳转在不同浏览器和屏幕宽度下也可能出现差异。</p>
+<p>开发过程中，我越来越清楚地意识到：</p>
+<p><strong>一个功能能够运行，和它在各种情况下都能正常工作，是两回事。</strong></p>
+<h2 id="AI-写代码，并不意味着不需要判断"><a href="#AI-写代码，并不意味着不需要判断" class="headerlink" title="AI 写代码，并不意味着不需要判断"></a>AI 写代码，并不意味着不需要判断</h2><p>这是整个过程中让我感受比较深的一点。</p>
+<p>AI 的确大幅降低了编程的门槛。</p>
+<p>以前我遇到一个 CSS 问题，可能连应该搜索什么关键词都不知道。现在我可以描述看到的现象，让 AI 帮我分析可能的原因，并直接修改代码。</p>
+<p>但这不代表整个过程没有困难。</p>
+<p>有时候，一个问题已经解决，却引入了另一个问题。</p>
+<p>有时候，测试全部通过，实际页面看起来仍然不理想。</p>
+<p>还有时候，明明只是想修改一个很小的样式，却需要考虑桌面、手机、深色模式、不同内容长度，以及之前已经修复过的其他问题。</p>
+<p>我也逐渐发现，不能仅凭 AI 告诉我“已经完成”，就认定事情真的完成了。</p>
+<p>因此，后来开发 Milo 时，我开始更重视实际截图、回归测试、独立预览环境和 Git 提交记录。</p>
+<p>这些测试工具和自动化流程本身主要也是由 Codex 编写的。我负责要求它检查哪些场景、确认测试报告，并决定是否接受修改。</p>
+<p>我不能说自己已经因此掌握了完整的前端开发能力。</p>
+<p>很多代码如果让我从头独立编写，我依然做不到。</p>
+<p>但至少，现在我可以更清楚地提出问题，理解一部分技术解释，并根据实际结果做出选择。</p>
+<p>这和直接下载一个现成主题使用，是很不一样的体验。</p>
+<h2 id="从-v0-2-0-到-v0-3-0"><a href="#从-v0-2-0-到-v0-3-0" class="headerlink" title="从 v0.2.0 到 v0.3.0"></a>从 v0.2.0 到 v0.3.0</h2><p>2026 年 11 月，Milo 发布了第一个公开预发布版本 v0.2.0。</p>
+<p>之后，我没有立即把它当成完成品，而是继续在实际使用中寻找问题。</p>
+<p>到了 v0.3.0，主题又进行了多项调整，包括首页图片展示、桌面与手机端布局、文章摘要处理、页脚版本信息，以及移动端阅读进度条的位置。</p>
+<p>最终，v0.3.0 也部署到了我的个人博客。</p>
+<p>项目目前仍然标记为 <strong>Pre-release</strong>。</p>
+<p>这不是因为我认为它完全不可用，而是因为它距离充分验证还有一定距离。</p>
+<p>目前的主要开发和测试环境仍然比较有限，Safari、Firefox 以及真实移动设备上的表现，都还需要进一步检验。</p>
+<p>真正让一个主题变得可靠，不能只靠开发者自己觉得满意。</p>
+<p>如果未来有人在不同的环境里安装和使用 Milo，也许还会发现我没有注意到的问题。</p>
+<h2 id="AI-时代，一个普通人能做些什么？"><a href="#AI-时代，一个普通人能做些什么？" class="headerlink" title="AI 时代，一个普通人能做些什么？"></a>AI 时代，一个普通人能做些什么？</h2><p>开发 Milo 之前，我对软件开发的理解很简单：想要做出一个程序，首先得学会编程。</p>
+<p>现在我发现，这个判断至少不再那么绝对。</p>
+<p>一个没有专业编程背景的人，可以借助 AI，把原本停留在想法中的东西逐渐变成实际可以使用的软件。</p>
+<p>但我也不觉得这意味着人人都能轻易成为软件工程师。</p>
+<p>能让 AI 写出代码，不等于理解了代码；能够完成一个项目，也不代表就具备了独立维护复杂软件的能力。</p>
+<p>AI 让实现变得更容易，却没有消除判断、测试和维护的重要性。</p>
+<p>对我来说，Milo 最大的意义也不在于它使用了什么技术，或者目前有多少功能。</p>
+<p>而在于，我终于不需要一直在别人的作品之间寻找一个最接近自己想法的选择。</p>
+<p>我可以尝试直接把自己的想法做出来。</p>
+<p>哪怕绝大部分代码并不是由我亲手编写。</p>
+<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>Milo 目前还只是一个不断完善中的个人项目。</p>
+<p>它并不追求成为功能最丰富的 Hexo 主题，也没有必要和那些已经发展多年的成熟项目比较。</p>
+<p>我希望它保持简洁、稳定，能够长期服务于自己的博客。如果以后也有人喜欢这种设计，并愿意使用它，那当然更好。</p>
+<p>我也不打算把这段经历包装成一个完全不懂技术的人突然掌握了软件开发。</p>
+<p>更准确地说，是 AI 提供了我原本不具备的实现能力，而我通过不断提出需求、试用、修改和判断，逐渐推动了这个项目。</p>
+<p><strong>Milo 不完全是我写出来的，但它确实是按照我的想法，一步一步做出来的。</strong></p>
+<p>对现在的我来说，这已经是一件很有意思的事。</p>
+<hr>
+<p><strong>项目仓库：</strong> <a target="_blank" rel="noopener" href="https://github.com/tanwenhaodotcom/hexo-theme-milo">https://github.com/tanwenhaodotcom/hexo-theme-milo</a></p>
+<p><strong>当前版本：</strong> <a target="_blank" rel="noopener" href="https://github.com/tanwenhaodotcom/hexo-theme-milo/releases/tag/v0.3.0">Milo v0.3.0 Pre-release</a></p>
+<p><em>本文根据我的实际开发经历，在 ChatGPT 的协助下整理完成。</em></p>
+</article><div class="article-footer"><p>发表于 2026-11-10</p><div class="tags"><a href="/tags/Hexo/"># Hexo</a><a href="/tags/Milo/"># Milo</a><a href="/tags/AI/"># AI</a><a href="/tags/Codex/"># Codex</a></div></div><nav class="post-nav" aria-label="相邻文章"><a class="post-next" rel="next" href="/2021/11/03/%E4%B8%AD%E5%9B%BD%E8%BF%91%E4%BB%A3%E5%8F%B2%E7%AE%80%E8%BF%B0%EF%BC%881921-1978%EF%BC%89/"><small>下一篇 →</small><span>中国近代史简述（1921-1978）</span><time datetime="2021-11-02T16:00:00.000Z">2021-11-03</time></a></nav><section class="comments"><h2>评论</h2><button class="load-comments" data-shortname="tanwenhao-com" data-url="https://tanwenhao.com/2026/11/10/Milo%EF%BC%9A%E4%BB%8E%E5%AF%BB%E6%89%BE%E4%B8%BB%E9%A2%98%EF%BC%8C%E5%88%B0%E5%92%8C-AI-%E4%B8%80%E8%B5%B7%E5%81%9A%E5%87%BA%E8%87%AA%E5%B7%B1%E7%9A%84-Hexo-%E4%B8%BB%E9%A2%98/">加载评论</button><div id="disqus_thread"></div></section></main><aside class="toc-sidebar"><h2>本文目录</h2><nav aria-label="文章目录"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E5%88%87%E4%BB%8E%E6%89%BE%E4%B8%8D%E5%88%B0%E5%90%88%E9%80%82%E7%9A%84%E4%B8%BB%E9%A2%98%E5%BC%80%E5%A7%8B"><span class="toc-text">一切从找不到合适的主题开始</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%88%91%E4%B8%8D%E4%BC%9A%E5%86%99%E5%A4%9A%E5%B0%91%E4%BB%A3%E7%A0%81%EF%BC%8C%E9%82%A3%E8%A6%81%E6%80%8E%E4%B9%88%E5%81%9A%EF%BC%9F"><span class="toc-text">我不会写多少代码，那要怎么做？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Milo-%E6%83%B3%E6%88%90%E4%B8%BA%E4%BB%80%E4%B9%88%E6%A0%B7%E7%9A%84%E4%B8%BB%E9%A2%98%EF%BC%9F"><span class="toc-text">Milo 想成为什么样的主题？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%8E%E8%83%BD%E6%98%BE%E7%A4%BA%E7%BD%91%E9%A1%B5%EF%BC%8C%E5%88%B0%E7%9C%9F%E6%AD%A3%E8%83%BD%E5%A4%9F%E4%BD%BF%E7%94%A8"><span class="toc-text">从能显示网页，到真正能够使用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A6%96%E9%A1%B5%E4%B8%8E%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80"><span class="toc-text">首页与响应式布局</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E7%AB%A0%E9%98%85%E8%AF%BB%E4%BD%93%E9%AA%8C"><span class="toc-text">文章阅读体验</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%90%9C%E7%B4%A2%E3%80%81%E5%BD%92%E6%A1%A3%E5%92%8C%E5%85%B6%E4%BB%96%E7%BB%86%E8%8A%82"><span class="toc-text">搜索、归档和其他细节</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#AI-%E5%86%99%E4%BB%A3%E7%A0%81%EF%BC%8C%E5%B9%B6%E4%B8%8D%E6%84%8F%E5%91%B3%E7%9D%80%E4%B8%8D%E9%9C%80%E8%A6%81%E5%88%A4%E6%96%AD"><span class="toc-text">AI 写代码，并不意味着不需要判断</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%8E-v0-2-0-%E5%88%B0-v0-3-0"><span class="toc-text">从 v0.2.0 到 v0.3.0</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#AI-%E6%97%B6%E4%BB%A3%EF%BC%8C%E4%B8%80%E4%B8%AA%E6%99%AE%E9%80%9A%E4%BA%BA%E8%83%BD%E5%81%9A%E4%BA%9B%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-text">AI 时代，一个普通人能做些什么？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%80%E5%90%8E"><span class="toc-text">最后</span></a></li></ol></nav></aside></div><footer class="footer"><div>Copyright © 2020 – 2026 Wenhao Tan</div><div>Powered by <a target="_blank" href="https://hexo.io/" rel="noopener">Hexo 8.1.2</a> · Theme <a target="_blank" href="https://github.com/tanwenhaodotcom/hexo-theme-milo" rel="noopener">Milo 0.3.0</a></div></footer></body></html>
