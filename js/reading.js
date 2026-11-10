@@ -14,7 +14,7 @@
     heading.setAttribute('tabindex','-1');
     heading.focus({preventScroll:true});
     heading.scrollIntoView({block:'start'});
-    // Preserve the normal anchor URL and back-button behavior.
+    // 保留正常锚点 URL 和浏览器返回行为。
     if(location.hash!==link.hash)history.pushState(null,'',link.hash);
   });
 
@@ -63,7 +63,7 @@
       preview=document.createElement('img');caption=document.createElement('p');
       dialog.append(close,preview,caption);document.body.append(dialog);
       close.addEventListener('click',()=>dialog.close());
-      // The close button is the only focusable control in this modal.
+      // 关闭按钮是此弹窗唯一可聚焦的控件。
       dialog.addEventListener('keydown',event=>{if(event.key==='Tab'){event.preventDefault();close.focus()}});
       dialog.addEventListener('click',event=>{if(event.target===dialog)dialog.close()});
       dialog.addEventListener('close',()=>{document.documentElement.classList.remove('lightbox-open');source?.focus({preventScroll:true});preview.removeAttribute('src')});
@@ -73,7 +73,7 @@
     dialog.showModal();document.documentElement.classList.add('lightbox-open');
   }
   article.querySelectorAll('img').forEach(image=>{
-    // Existing image links retain their original destination and keyboard behavior.
+    // 已有图片链接保留原目标和键盘行为。
     if(image.closest('a,button,picture[data-no-lightbox]') || image.hasAttribute('data-no-lightbox'))return;
     image.tabIndex=0;image.setAttribute('role','button');image.setAttribute('aria-haspopup','dialog');
     image.setAttribute('aria-label','放大图片'+(image.alt?'：'+image.alt:''));
